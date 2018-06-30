@@ -3,12 +3,17 @@
     <head>
         <title>Unidade 02 - Elemento Head</title>
         <meta charset="utf-8">
+        <meta name = "Author" content="Samuel Silva">
+        <meta name = "Generator" content = "VScode">
+        <meta name = "keywords" content = "css, html, vscode"
+        <meta name = "description" content = "meus estudos sobre webdev">
+        <meta name = "application" content = "Arquivo 4">
+        <meta http-equiv="refresh" content = "4">
+
         <style > 
             body {
 
                 background : green;
-
-                
             }
         </style>
 
@@ -16,7 +21,14 @@
             function escreverNome(){
                 nome.innerHTML = "Samuel";
             }
-             window.onload = escreverNome;
+                          
+            function generateRandomNumber(){
+                numero.innerHTML = Math.random() * 50;           
+            }
+
+            window.onload = escreverNome;
+            window.onload = generateRandomNumber;
+
         </script>
 
         
@@ -25,5 +37,6 @@
 
     <body>
         <p id = "nome" > </p>
+        <p id = "numero"> </p>
     </body>
 </html>
