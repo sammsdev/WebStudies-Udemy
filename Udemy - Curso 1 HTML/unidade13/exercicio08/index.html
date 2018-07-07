@@ -3,11 +3,22 @@
     <head>
         <meta charset="UTF-8">
         <title>Curso HTML5 Essencial</title>
+        <script>
+            
+            function mostrarRange(){
+
+                document.getElementById("resultado_range_filhos").innerHTML = document.getElementById("range_filhos").value;
+            }
+        
+        </script>
     </head>
 
     <body>
         <form action="index.html" method="post">
-            
+
+            <input type="range" id="range_filhos" min="0" max ="10" value="0" onchange="mostrarRange()">
+            <span id = "resultado_range_filhos"> </span>
+
         </form>
     </body>
 </html>
