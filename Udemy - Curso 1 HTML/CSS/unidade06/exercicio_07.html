@@ -25,6 +25,7 @@
                 font-family:Arial, Helvetica, sans-serif;
                 font-size:14px;
                 box-shadow: 0 0 10px #666;
+                overflow: hidden;
             }
 
             header {
@@ -61,6 +62,24 @@
                 line-height:1.5;
                 margin-bottom:20px; 
             }
+        
+            section.textoApresentacao img{
+                float: left;
+                margin-right: 1em;
+                margin-bottom: 1em;
+            }   
+            section.textoMedio {
+                float: left;
+                clear: both;
+            }   
+            
+            section.textoMedio p:first-of-type::first-letter{                
+                font-size: 4em;
+                line-height: 0.8;
+                margin: 0 4px 0 0;
+            }   
+
+
         </style>
 
 
